@@ -12,7 +12,7 @@ bash <(curl -s https://raw.githubusercontent.com/alamhamim/vangchur_git/main/ins
 ```
 
 ## Uninstall
-Depending on what are you are using, if you are using mac it will most likely .zshrc
+Depending on what are you are using, if you are using mac it be will most likely .zshrc
 Run below command:::
 
 ```bash
