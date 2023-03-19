@@ -1,7 +1,22 @@
 #!/bin/bash
 
-# Download and execute the 'vangchur' alias script
-curl -sL <https://raw.githubusercontent.com/alamhamim/vangchur_git/main/vangchur_git.sh> | bash -s
+# Generate a random commit message using fortune
+commit_msg="Hey it works!!"
 
-# Print a message to let the user know the 'vangchur' alias has been created
-echo "The 'git_vangchur' alias has been created. ||| Please do not use this in prod environment :)"
+# Check the user's shell and update the appropriate configuration file
+if [[ "$SHELL" == "/bin/bash" ]]; then
+  echo "alias git_vangchur='git add . && git commit -m \"$commit_msg\" && git push'" >> ~/.bashrc
+  source ~/.bashrc
+elif [[ "$SHELL" == "/bin/zsh" ]]; then
+  echo "alias git_vangchur='git add . && git commit -m \"$commit_msg\" && git push'" >> ~/.zshrc
+  source ~/.zshrc
+elif [[ "$SHELL" == "/bin/sh" ]] || [[ "$SHELL" == "/usr/bin/sh" ]]; then
+  echo "alias git_vangchur='git add . && git commit -m \"$commit_msg\" && git push'" >> ~/.bash_profile
+  source ~/.bash_profile
+else
+  echo "Your Machine Sucks!!! Get a new one!!!"
+fi
+
+# Print a message to let the user know the alias has been created
+echo "The 'git_vangchur' alias has been created with the following commit message:"
+echo "$commit_msg"
