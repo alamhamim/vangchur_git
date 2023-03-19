@@ -12,23 +12,10 @@ bash <(curl -s https://raw.githubusercontent.com/alamhamim/vangchur_git/main/ins
 ```
 
 ## Uninstall
-Depending on what are you are using, if you are using mac it will be most likely .zshrc
-Run below command:::
-
 ```bash
-nano ~/.zshrc
+bash <(curl -s https://raw.githubusercontent.com/alamhamim/vangchur_git/main/uninstall/uninstall.sh)
+
 ```
-
-And look for the alias git_vangchur='....'
-
-Then remove the line. 
-
-Note::: Same thing goes for the linux (.bashrc || .bash_profile)
-
-
-
-
-
 
 # Thank You!!!  
 
