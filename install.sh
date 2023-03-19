@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Generate a random commit message using fortune
-commit_msg="Hey it works!!"
+commit_msg="We Had To Use Dark Magic To Make This Work!!! Ohh Hey It works!!!"
 
 # Check the user's shell and update the appropriate configuration file
 if [[ "$SHELL" == "/bin/bash" ]]; then
@@ -20,3 +20,4 @@ fi
 # Print a message to let the user know the alias has been created
 echo "The 'git_vangchur' alias has been created with the following commit message:"
 echo "$commit_msg"
+echo "Thank you for installing this stupid project!!! Have fun!!!"
