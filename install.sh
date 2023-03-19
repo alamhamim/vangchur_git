@@ -21,3 +21,5 @@ fi
 echo "The 'git_vangchur' alias has been created with the following commit message:"
 echo "$commit_msg"
 echo "Thank you for installing this stupid project!!! Have fun!!!"
+
+# ading develop branch
