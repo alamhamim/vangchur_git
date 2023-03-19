@@ -8,4 +8,3 @@ git config --global alias.vangchur "!git add . && git commit -m \"$commit_msg\" 
 # Print a message to let the user know the alias has been created
 echo "The 'vangchur' alias has been created with the following commit message:"
 echo "$commit_msg"
-
