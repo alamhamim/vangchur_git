@@ -23,3 +23,4 @@ echo "$commit_msg"
 echo "Thank you for installing this stupid project!!! Have fun!!!"
 
 # adding develop branch
+# Checking
